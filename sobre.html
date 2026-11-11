@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História | Charlotte Doceria</title>
+  <meta name="description" content="Conheça a história da Charlotte Doceria: criada por duas irmãs apaixonadas por doces e por bons encontros. Um cantinho acolhedor com café e muito carinho no Centro.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧁</text></svg>">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rose-red': '#C5283D','rose-red-hover': '#A41623','rose-crimson': '#B81D3E',
+            'rose-pink': '#D84A75','rose-dusty': '#BA5D77','rose-baby': '#FDE8EF',
+            'rose-soft': '#F9CAD8','rose-petal': '#FFF0F5','rose-canvas': '#FFF8FA',
+            'cocoa': '#2E1B26','muted-rose': '#786370',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Caveat"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#FFF8FA] text-[#2E1B26] font-sans flex flex-col min-h-screen">
+
+  <!-- HEADER GLOBAL -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#F6D3DE] shadow-sm transition-all duration-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5 group focus:outline-none">
+          <div class="relative w-12 h-12 rounded-full bg-gradient-to-tr from-[#FDE8EF] to-[#FFF0F5] border-2 border-[#F9CAD8] flex items-center justify-center text-[#C5283D] font-serif text-2xl font-bold shadow-sm transition-transform duration-300 group-hover:scale-110 hover-wobble">
+            <span>C</span>
+            <span class="absolute -top-1 -right-1 text-xs">🧁</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl font-bold tracking-tight text-[#2E1B26] group-hover:text-[#C5283D] transition-colors">
+              Charlotte <span class="text-[#C5283D] font-serif italic font-normal">Doceria</span>
+            </span>
+            <span class="text-[10px] font-sans uppercase tracking-[0.2em] text-[#BA5D77] font-semibold -mt-1">
+              Confeitaria Artesanal &amp; Afeto
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="nav-link-charlotte py-2">Início</a>
+          <a href="produtos.html" class="nav-link-charlotte py-2">Doces</a>
+          <a href="sobre.html" class="nav-link-charlotte active py-2">Nossa História</a>
+          <a href="contato.html" class="nav-link-charlotte py-2">Contato</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer"
+             class="btn-delivery-chic inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full font-bold text-xs tracking-wide uppercase shadow-sm">
+            <span>🛵</span><span>Quero Delivery</span>
+          </a>
+          <a href="https://wa.me/5583993804545" target="_blank" rel="noopener noreferrer" 
+             class="btn-whatsapp-chic inline-flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-xs tracking-wide uppercase">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="flex md:hidden items-center">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Abrir Menu"
+                  class="p-2.5 rounded-2xl text-[#2E1B26] bg-[#FDE8EF] hover:bg-[#F9CAD8] transition-colors focus:outline-none">
+            <svg id="menu-icon" class="w-6 h-6 text-[#C5283D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden text-[#C5283D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-b border-[#F6D3DE] bg-white px-5 pt-4 pb-6 shadow-2xl transition-all">
+      <nav class="flex flex-col space-y-3">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Início</a>
+        <a href="produtos.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Doces</a>
+        <a href="sobre.html" class="px-4 py-2.5 rounded-xl font-bold text-[#C5283D] bg-[#FDE8EF]">Nossa História</a>
+        <a href="contato.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Contato</a>
+        <div class="pt-4 border-t border-[#F6D3DE] flex flex-col gap-3">
+          <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer"
+             class="btn-delivery-chic flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm">
+            <span>🛵</span><span>Pedir no Quero Delivery</span>
+          </a>
+          <a href="https://wa.me/5583993804545" target="_blank" rel="noopener noreferrer"
+             class="btn-whatsapp-chic flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+            <span>Falar no WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/charlottedoceria_/" target="_blank" rel="noopener noreferrer"
+             class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-[#F6D3DE] text-[#C5283D] font-semibold text-sm bg-[#FFF8FA]">
+            <span>Instagram @charlottedoceria_</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+
+    <!-- HISTÓRIA DAS DUAS IRMÃS -->
+    <section class="py-16 md:py-24 relative overflow-hidden">
+      
+      <div class="absolute top-10 right-0 w-80 h-80 bg-[#FDE8EF] rounded-full blur-3xl pointer-events-none opacity-60"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#F9CAD8] rounded-full blur-3xl pointer-events-none opacity-50"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Imagem das irmãs — foto real -->
+          <div class="lg:col-span-5 order-2 lg:order-1 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-[#FDE8EF] relative group charlotte-card">
+                <img src="img/irmas-charlotte.jpg" 
+                     alt="As fundadoras da Charlotte Doceria" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="inline-block px-3 py-1 bg-[#C5283D]/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                    🧁 Feito com Amor
+                  </span>
+                  <p class="font-serif text-xl font-bold">Charlotte Doceria</p>
+                  <p class="text-xs text-pink-100">O cantinho mais acolhedor do Centro</p>
+                </div>
+              </div>
+
+              <!-- Selo Flutuante de Horário -->
+              <div class="absolute -bottom-6 -right-6 bg-white p-5 rounded-3xl shadow-xl border border-[#F6D3DE] hidden sm:block max-w-[210px]">
+                <span class="text-xs font-bold text-[#C5283D] uppercase tracking-wider block mb-1">Café da Tarde</span>
+                <p class="font-serif text-2xl font-bold text-[#2E1B26]">14h às 19h</p>
+                <p class="text-xs text-[#786370] mt-1">Segunda a Sábado com carinho dedicado</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto Narrativo -->
+          <div class="lg:col-span-7 order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#C5283D] bg-[#FDE8EF] border border-[#F9CAD8] mb-4">
+              <span>🧁</span>
+              <span>Nossa História</span>
+              <span>✨</span>
+            </div>
+            
+            <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2E1B26] mb-6 leading-tight">
+              A História da <span class="italic text-[#C5283D] font-normal">Charlotte Doceria</span>
+            </h1>
+
+            <div class="space-y-6 text-base sm:text-lg text-[#786370] leading-relaxed font-normal mb-8">
+              <p class="text-lg sm:text-xl text-[#2E1B26] font-medium leading-relaxed">
+                Criada por duas irmãs apaixonadas por doces (e por bons encontros), a Charlotte agora tem um cantinho lindo para te receber com café e muito doce.
+              </p>
+            </div>
+
+            <!-- DESTAQUE: "Você é nossa convidada especial!" -->
+            <div class="guest-highlight-box mb-8 group">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-white shadow-md border border-[#F9CAD8] text-[#C5283D] flex items-center justify-center text-2xl flex-shrink-0 animate-pulse-heart">
+                  🧁
+                </div>
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-widest text-[#BA5D77] block mb-1">
+                    Um convite do coração ✨
+                  </span>
+                  <p class="font-serif italic font-bold text-2xl sm:text-3xl text-[#C5283D] leading-snug guest-highlight-phrase">
+                    "Você é nossa convidada especial!"
+                  </p>
+                  <p class="text-xs sm:text-sm text-[#786370] mt-2 font-normal">
+                    Puxe uma cadeira, sinta o aroma do café fresquinho e escolha o seu doce favorito para alegrar o seu dia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ponto de Referência -->
+            <div class="p-6 rounded-3xl bg-white border border-[#F6D3DE] shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-[#FDE8EF] text-[#C5283D] flex items-center justify-center flex-shrink-0 text-xl border border-[#F9CAD8]">
+                📍
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-[#2E1B26] text-base">Nosso Cantinho no Centro</h4>
+                <p class="text-sm text-[#786370] mt-1 leading-relaxed">
+                  Av. Rui Barbosa, 27 - térreo - Centro <br>
+                  <span class="font-bold text-[#C5283D]">(em frente à Onofre - Materiais de construção)</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSOS PILARES -->
+    <section class="py-16 md:py-24 bg-white border-y border-[#F6D3DE]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#C5283D] bg-[#FDE8EF] border border-[#F9CAD8] mb-3">
+            <span>✨</span> O Que Nos Move
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#2E1B26] mb-4">
+            Nossos Pilares
+          </h2>
+          <p class="text-base sm:text-lg text-[#786370]">
+            Princípios que guiam cada receita e cada atendimento carinhoso na Charlotte Doceria.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="charlotte-card rounded-3xl p-8 flex flex-col justify-between group">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-[#FDE8EF] border border-[#F9CAD8] text-[#C5283D] flex items-center justify-center text-2xl mb-6 shadow-sm hover-wobble">🍰</div>
+              <h3 class="font-serif text-2xl font-bold text-[#2E1B26] mb-3 group-hover:text-[#C5283D] transition-colors">Variedade</h3>
+              <p class="text-base text-[#786370] leading-relaxed">
+                Uma seleção apaixonante de delícias no pote, fatias de bolo e sobremesas finas preparadas para encantar todos os gostos.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#F6D3DE] text-xs font-semibold text-[#BA5D77]">
+              Potes recheados, fatias e sobremesas artesanais
+            </div>
+          </div>
+
+          <div class="charlotte-card rounded-3xl p-8 flex flex-col justify-between group">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-[#FDE8EF] border border-[#F9CAD8] text-[#C5283D] flex items-center justify-center text-2xl mb-6 shadow-sm hover-wobble">✨</div>
+              <h3 class="font-serif text-2xl font-bold text-[#2E1B26] mb-3 group-hover:text-[#C5283D] transition-colors">Qualidade</h3>
+              <p class="text-base text-[#786370] leading-relaxed">
+                Ingredientes selecionados, preparo caprichado e apresentação impecável em cada doce.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#F6D3DE] text-xs font-semibold text-[#BA5D77]">
+              Frescor e sabor inconfundível
+            </div>
+          </div>
+
+          <div class="charlotte-card rounded-3xl p-8 flex flex-col justify-between group">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-[#FDE8EF] border border-[#F9CAD8] text-[#C5283D] flex items-center justify-center text-2xl mb-6 shadow-sm hover-wobble">💖</div>
+              <h3 class="font-serif text-2xl font-bold text-[#2E1B26] mb-3 group-hover:text-[#C5283D] transition-colors">Proximidade</h3>
+              <p class="text-base text-[#786370] leading-relaxed">
+                Atendimento humano, acolhedor e atencioso, tanto na loja física quanto nos canais digitais.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#F6D3DE] text-xs font-semibold text-[#BA5D77]">
+              Um convite para se sentir em casa
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER DE CONVITE & AÇÕES -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative bg-gradient-to-br from-[#FFF0F4] via-white to-[#FDE8EF] rounded-[2.5rem] p-8 sm:p-14 md:p-16 border-2 border-[#F9CAD8] shadow-xl overflow-hidden text-center">
+          <div class="relative z-10 max-w-2xl mx-auto">
+            <span class="text-4xl block mb-4 animate-pulse-heart">🧁</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#2E1B26] mb-4">
+              Venha tomar um café conosco!
+            </h2>
+            <p class="text-base sm:text-lg text-[#786370] leading-relaxed mb-8">
+              Estamos na Av. Rui Barbosa, 27 - Centro, de segunda a sábado das 14h às 19h. Ou se preferir, peça pelo WhatsApp ou pelo Quero Delivery!
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://wa.me/5583993804545" target="_blank" rel="noopener noreferrer" 
+                 class="btn-whatsapp-chic inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider shadow-lg w-full sm:w-auto">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+                <span>Falar no WhatsApp</span>
+              </a>
+              <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer" 
+                 class="btn-delivery-chic inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider shadow-lg w-full sm:w-auto">
+                <span>🛵</span><span>Pedir no Quero Delivery</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="bg-white border-t border-[#F6D3DE] pt-14 pb-10 text-[#786370]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🧁</span>
+            <span class="font-serif text-2xl font-bold text-[#2E1B26]">Charlotte <span class="italic text-[#C5283D] font-normal">Doceria</span></span>
+          </div>
+          <p class="text-sm leading-relaxed text-[#786370]">
+            Um cantinho com aroma de café e doces inesquecíveis para transformar o seu dia.
+          </p>
+          <div class="store-status-badge"></div>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Navegação</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-[#C5283D] transition-colors">Início</a></li>
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">Doces Artesanais</a></li>
+            <li><a href="sobre.html" class="text-[#C5283D] font-bold">Nossa História</a></li>
+            <li><a href="contato.html" class="hover:text-[#C5283D] transition-colors">Contato &amp; Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Categorias</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍯 Delícias no pote</a></li>
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍰 Fatias de bolo</a></li>
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍮 Sobremesas diversas</a></li>
+            <li><a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#C5283D] font-semibold transition-colors flex items-center gap-1"><span>🛵</span><span>Quero Delivery</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Venha nos visitar</h4>
+          <p class="text-sm text-[#2E1B26] font-medium mb-1">Av. Rui Barbosa, 27 - térreo</p>
+          <p class="text-xs text-[#786370] mb-3">Centro (Em frente à Onofre - Materiais de construção)</p>
+          <p class="text-sm text-[#2E1B26] font-medium mb-1">Segunda a Sábado</p>
+          <p class="text-xs text-[#C5283D] font-bold mb-4">14h às 19h</p>
+          <div class="flex items-center gap-3">
+            <a href="https://www.instagram.com/charlottedoceria_/" target="_blank" rel="noopener noreferrer" 
+               class="text-xs font-bold text-[#D84A75] hover:text-[#C5283D] flex items-center gap-1">
+              <span>@charlottedoceria_</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#F6D3DE] flex flex-col sm:flex-row items-center justify-between text-xs text-[#9E8896] gap-3">
+        <p>© 2026 Charlotte Doceria. Todos os direitos reservados. Confeitaria artesanal &amp; Afeto.</p>
+        <p class="flex items-center gap-1">Feito com 🧁 e doçura por duas irmãs apaixonadas por doces.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <div class="floating-whatsapp-container">
+    <div class="floating-tooltip">
+      <span>🧁</span>
+      <span>Deseja um doce hoje? Fale conosco!</span>
+    </div>
+    <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Charlotte%20Doceria." 
+       target="_blank" rel="noopener noreferrer"
+       class="w-14 h-14 rounded-full btn-whatsapp-chic flex items-center justify-center text-white shadow-2xl focus:outline-none hover:scale-110 transition-transform"
+       aria-label="Falar no WhatsApp">
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doces Artesanais & Delícias no Pote | Charlotte Doceria</title>
+  <meta name="description" content="Cardápio floral da Charlotte Doceria no Centro: Delícias no pote, fatias de bolo e sobremesas diversas preparadas com rosas e muito amor. Peça pelo WhatsApp ou Quero Delivery.">
+  
+  <!-- Favicon com Flor e Afeto -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌹</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rose-red': '#C5283D',
+            'rose-red-hover': '#A41623',
+            'rose-crimson': '#B81D3E',
+            'rose-pink': '#D84A75',
+            'rose-dusty': '#BA5D77',
+            'rose-baby': '#FDE8EF',
+            'rose-soft': '#F9CAD8',
+            'rose-petal': '#FFF0F5',
+            'rose-canvas': '#FFF8FA',
+            'cocoa': '#2E1B26',
+            'muted-rose': '#786370',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Caveat"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#FFF8FA] text-[#2E1B26] font-sans flex flex-col min-h-screen">
+
+  <!-- BARRA DE ANÚNCIO SUPERIOR FLORAL -->
+  <div class="bg-gradient-to-r from-[#FDE8EF] via-[#FFF0F5] to-[#FDE8EF] text-[#BA5D77] py-2 px-4 text-xs font-medium border-b border-[#F6D3DE]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="text-sm">🌹</span>
+        <span>Criada por duas irmãs apaixonadas por doces • Av. Rui Barbosa, 27 - Centro</span>
+      </div>
+      <div class="flex items-center gap-3 text-[11px]">
+        <span class="hidden md:inline font-semibold text-[#C5283D]">🕒 Seg. à Sáb. das 14h às 19h</span>
+        
+        <!-- LINK DO QUERO DELIVERY: Altere a URL abaixo caso possua link direto da loja -->
+        <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1 font-bold text-[#C5283D] hover:text-[#A41623] bg-white/80 px-2 py-0.5 rounded-full border border-[#F6D3DE] shadow-xs transition-colors">
+          <span>🛵</span>
+          <span>Quero Delivery</span>
+        </a>
+
+        <a href="https://www.instagram.com/charlottedoceria_/" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-1 font-bold text-[#D84A75] hover:text-[#C5283D] transition-colors">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span>@charlottedoceria_</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER GLOBAL -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#F6D3DE] shadow-sm transition-all duration-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo / Marca Confeitaria Exclusiva Floral -->
+        <a href="index.html" class="flex items-center gap-3.5 group focus:outline-none">
+          <div class="relative w-12 h-12 rounded-full bg-gradient-to-tr from-[#FDE8EF] to-[#FFF0F5] border-2 border-[#F9CAD8] flex items-center justify-center text-[#C5283D] font-serif text-2xl font-bold shadow-sm transition-transform duration-300 group-hover:scale-110 hover-wobble">
+            <span>C</span>
+            <span class="absolute -top-1 -right-1 text-xs">🌹</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl font-bold tracking-tight text-[#2E1B26] group-hover:text-[#C5283D] transition-colors">
+              Charlotte <span class="text-[#C5283D] font-serif italic font-normal">Doceria</span>
+            </span>
+            <span class="text-[10px] font-sans uppercase tracking-[0.2em] text-[#BA5D77] font-semibold -mt-1">
+              Confeitaria Floral & Afeto
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="nav-link-charlotte py-2">Início</a>
+          <a href="produtos.html" class="nav-link-charlotte active py-2">Doces</a>
+          <a href="sobre.html" class="nav-link-charlotte py-2">Nossa História</a>
+          <a href="contato.html" class="nav-link-charlotte py-2">Contato</a>
+        </nav>
+
+        <!-- Ações do Header (Quero Delivery + WhatsApp) -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer"
+             class="btn-delivery-chic inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full font-bold text-xs tracking-wide uppercase shadow-sm">
+            <span>🛵</span>
+            <span>Quero Delivery</span>
+          </a>
+
+          <a href="https://wa.me/5583993804545" target="_blank" rel="noopener noreferrer" 
+             class="btn-whatsapp-chic inline-flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-xs tracking-wide uppercase">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:hidden items-center">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Abrir Menu"
+                  class="p-2.5 rounded-2xl text-[#2E1B26] bg-[#FDE8EF] hover:bg-[#F9CAD8] transition-colors focus:outline-none">
+            <svg id="menu-icon" class="w-6 h-6 text-[#C5283D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden text-[#C5283D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-[#F6D3DE] bg-white px-5 pt-4 pb-6 shadow-2xl transition-all">
+      <nav class="flex flex-col space-y-3">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Início</a>
+        <a href="produtos.html" class="px-4 py-2.5 rounded-xl font-bold text-[#C5283D] bg-[#FDE8EF]">Doces</a>
+        <a href="sobre.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Nossa História</a>
+        <a href="contato.html" class="px-4 py-2.5 rounded-xl font-medium text-[#2E1B26] hover:bg-[#FFF8FA]">Contato</a>
+        
+        <div class="pt-4 border-t border-[#F6D3DE] flex flex-col gap-3">
+          <a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer"
+             class="btn-delivery-chic flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm">
+            <span>🛵</span>
+            <span>Pedir no Quero Delivery</span>
+          </a>
+
+          <a href="https://wa.me/5583993804545" target="_blank" rel="noopener noreferrer"
+             class="btn-whatsapp-chic flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+            </svg>
+            <span>Falar no WhatsApp</span>
+          </a>
+
+          <a href="https://www.instagram.com/charlottedoceria_/" target="_blank" rel="noopener noreferrer"
+             class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-[#F6D3DE] text-[#C5283D] font-semibold text-sm bg-[#FFF8FA]">
+            <span>Instagram @charlottedoceria_</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+
+    <!-- CABEÇALHO DA PÁGINA (TEMA FLORAL COM ROSAS) -->
+    <section class="pt-12 pb-12 md:pt-16 md:pb-16 border-b border-[#F6D3DE] bg-gradient-to-b from-white via-[#FFF0F5] to-[#FFF8FA] relative overflow-hidden">
+      
+      <!-- Detalhes florais sutis de fundo -->
+      <div class="absolute -top-12 -right-12 w-72 h-72 bg-[#FDE8EF] rounded-full blur-3xl pointer-events-none opacity-60"></div>
+      <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-[#F9CAD8] rounded-full blur-3xl pointer-events-none opacity-40"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#C5283D] bg-[#FDE8EF] border border-[#F9CAD8] mb-4 shadow-sm">
+          <span>🌹</span>
+          <span>Cardápio Floral da Charlotte Doceria</span>
+          <span>🌸</span>
+        </div>
+        
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#2E1B26] mb-4 leading-tight">
+          Nossos <span class="italic text-[#C5283D] font-normal">Doces Artesanais</span>
+        </h1>
+        
+        <p class="text-base sm:text-lg text-[#786370] max-w-2xl mx-auto leading-relaxed">
+          Cada receita é feita com afeto, camadas generosas e rosas na inspiração. Escolha a sua categoria favorita e consulte todos os produtos e preços com facilidade.
+        </p>
+
+        <!-- SELETOR DE CATEGORIAS INTERATIVO (3 CATEGORIAS OFICIAIS + VER TODOS) -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3.5 mt-8">
+          <button type="button" data-category="all" 
+                  class="category-tab-btn active px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-white text-[#786370] border border-[#F6D3DE] shadow-sm hover:scale-105">
+            ✨ Todos os Doces
+          </button>
+          <button type="button" data-category="pote" 
+                  class="category-tab-btn px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-white text-[#786370] border border-[#F6D3DE] shadow-sm hover:scale-105">
+            🍯 Delícias no pote
+          </button>
+          <button type="button" data-category="fatias" 
+                  class="category-tab-btn px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-white text-[#786370] border border-[#F6D3DE] shadow-sm hover:scale-105">
+            🍰 Fatias de bolo
+          </button>
+          <button type="button" data-category="sobremesas" 
+                  class="category-tab-btn px-5 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider bg-white text-[#786370] border border-[#F6D3DE] shadow-sm hover:scale-105">
+            🍮 Sobremesas diversas
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO: ELEMENTOS DECORATIVOS & TABELA DE PREÇOS INTERATIVA POR CATEGORIA -->
+    <section class="pt-10 pb-4">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- ELEMENTO DECORATIVO INTERATIVO: CATEGORIA 1 - DELÍCIAS NO POTE -->
+        <div class="category-price-board price-board-box p-6 sm:p-8 mb-8 transition-all duration-300" data-category="pote">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#F6D3DE] pb-5 mb-5">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#BA5D77] mb-1">
+                <span>🌹 Categoria 1</span>
+                <span>•</span>
+                <span>Montadas em Camadas Cremosas</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2E1B26] flex items-center gap-2">
+                <span>🍯</span> Delícias no Pote
+              </h2>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-semibold text-[#786370] bg-[#FDE8EF] px-3.5 py-1.5 rounded-full border border-[#F9CAD8]">
+                7 delícias irresistíveis
+              </span>
+              <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20das%20Del%C3%ADcias%20no%20Pote." 
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-xs font-bold text-[#C5283D] hover:underline">
+                <span>Pedir no WhatsApp</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tabela Visual Delicada de Preços -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Pote chocolatudo</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Pote ouro branco</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Pote red velvet</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Copo pudim</span>
+              <span class="price-badge-floral text-xs">R$ 20,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Pote da felicidade de ninho e brownie</span>
+              <span class="price-badge-floral text-xs">R$ 20,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Tortinha de limão</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item md:col-span-2">
+              <span class="font-medium text-[#2E1B26]">Sobremesa Oreo</span>
+              <span class="price-badge-floral text-xs">R$ 15,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ELEMENTO DECORATIVO INTERATIVO: CATEGORIA 2 - FATIAS DE BOLO -->
+        <div class="category-price-board price-board-box p-6 sm:p-8 mb-8 transition-all duration-300" data-category="fatias">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#F6D3DE] pb-5 mb-5">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#BA5D77] mb-1">
+                <span>🌸 Categoria 2</span>
+                <span>•</span>
+                <span>Massa Macia & Recheios Nobres</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2E1B26] flex items-center gap-2">
+                <span>🍰</span> Fatias de Bolo
+              </h2>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-semibold text-[#786370] bg-[#FDE8EF] px-3.5 py-1.5 rounded-full border border-[#F9CAD8]">
+                R$ 16,00 cada fatia
+              </span>
+              <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20as%20Fatias%20de%20Bolo%20do%20dia." 
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-xs font-bold text-[#C5283D] hover:underline">
+                <span>Pedir no WhatsApp</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tabela Visual Delicada de Preços -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Fatia de brigadeiro</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Fatia de ninho com geleia de morango</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Fatia de queijo do reino</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Fatia dois amores</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ELEMENTO DECORATIVO INTERATIVO: CATEGORIA 3 - SOBREMESAS DIVERSAS -->
+        <div class="category-price-board price-board-box p-6 sm:p-8 mb-8 transition-all duration-300" data-category="sobremesas">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#F6D3DE] pb-5 mb-5">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#BA5D77] mb-1">
+                <span>🌺 Categoria 3</span>
+                <span>•</span>
+                <span>Clássicos da Doçaria Artesanal</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2E1B26] flex items-center gap-2">
+                <span>🍮</span> Sobremesas Diversas
+              </h2>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-semibold text-[#786370] bg-[#FDE8EF] px-3.5 py-1.5 rounded-full border border-[#F9CAD8]">
+                Clássicos selecionados
+              </span>
+              <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Sobremesa%20da%20Charlotte." 
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-xs font-bold text-[#C5283D] hover:underline">
+                <span>Pedir no WhatsApp</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tabela Visual Delicada de Preços -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Brownie recheado</span>
+              <span class="price-badge-floral text-xs">R$ 16,00</span>
+            </div>
+            <div class="price-list-item">
+              <span class="font-medium text-[#2E1B26]">Pudim</span>
+              <span class="price-badge-floral text-xs">R$ 20,00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERIA DE CARDS VISUAIS DOS PRODUTOS (INDIVIDUAIS E ATRAENTES) -->
+    <section class="pb-16 md:pb-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+          
+          <!-- ==============================================
+               CATEGORIA 1: DELÍCIAS NO POTE (7 PRODUTOS)
+               ============================================== -->
+
+          <!-- 1. Pote chocolatudo -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" 
+                   alt="Pote chocolatudo" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍯</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Pote chocolatudo
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Para os verdadeiros apaixonados por cacau: camadas generosas de creme e chocolate intenso.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Pote%20chocolatudo%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Pote ouro branco -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=800&q=80" 
+                   alt="Pote ouro branco" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍯</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Pote ouro branco
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Combinação perfeita de bombons, creme suave e crocância refinada para adoçar a tarde.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Pote%20ouro%20branco%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Pote red velvet -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1616031037011-087265dd4797?auto=format&fit=crop&w=800&q=80" 
+                   alt="Pote red velvet" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🌹</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Pote red velvet
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  O charme aveludado da cor das rosas com recheio especial e textura incrivelmente macia.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Pote%20red%20velvet%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Copo pudim -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?auto=format&fit=crop&w=800&q=80" 
+                   alt="Copo pudim" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍯</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 20,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Copo pudim
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  A cremosidade clássica do pudim com calda de caramelo dourada montado no copo com todo charme.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 20,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Copo%20pudim%20(R$%2020,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Pote da felicidade de ninho e brownie -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1514056052883-d017fddd0426?auto=format&fit=crop&w=800&q=80" 
+                   alt="Pote da felicidade de ninho e brownie" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>💖</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 20,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Pote da felicidade de ninho e brownie
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Pedaços de brownie artesanal intercalados com brigadeiro cremoso de leite ninho. Uma verdadeira festa!
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 20,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Pote%20da%20felicidade%20de%20ninho%20e%20brownie%20(R$%2020,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Tortinha de limão -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" 
+                   alt="Tortinha de limão" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍋</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Tortinha de limão
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Equilíbrio impecável entre o cítrico refrescante do limão e a doçura aveludada do creme.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Tortinha%20de%20lim%C3%A3o%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Sobremesa Oreo -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="pote">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80" 
+                   alt="Sobremesa Oreo" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍪</span>
+                <span>Delícias no pote</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 15,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Sobremesa Oreo
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Camadas de creme especial salpicadas com biscoito Oreo crocante. O favorito das tardes doces!
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 15,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Sobremesa%20Oreo%20(R$%2015,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================
+               CATEGORIA 2: FATIAS DE BOLO (4 PRODUTOS)
+               ============================================== -->
+
+          <!-- 8. Fatia de brigadeiro -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="fatias">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" 
+                   alt="Fatia de brigadeiro" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍰</span>
+                <span>Fatias de bolo</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Fatia de brigadeiro
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Massa úmida e fofinha com recheio e cobertura generosa de brigadeiro tradicional de colher.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Fatia%20de%20brigadeiro%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Fatia de ninho com geleia de morango -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="fatias">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" 
+                   alt="Fatia de ninho com geleia de morango" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍓</span>
+                <span>Fatias de bolo</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Fatia de ninho com geleia de morango
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Creme nobre de ninho combinado com geleia artesanal de morangos frescos com toque floral.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Fatia%20de%20ninho%20com%20geleia%20de%20morango%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Fatia de queijo do reino -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="fatias">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80" 
+                   alt="Fatia de queijo do reino" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🧀</span>
+                <span>Fatias de bolo</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Fatia de queijo do reino
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  A clássica e sofisticada receita regional com o sabor marcante e inconfundível do queijo do reino.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Fatia%20de%20queijo%20do%20reino%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Fatia dois amores -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="fatias">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=800&q=80" 
+                   alt="Fatia dois amores" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍰</span>
+                <span>Fatias de bolo</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Fatia dois amores
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  O encontro apaixonante entre o brigadeiro preto aveludado e o brigadeiro branco delicado.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Fatia%20dois%20amores%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================
+               CATEGORIA 3: SOBREMESAS DIVERSAS (2 PRODUTOS)
+               ============================================== -->
+
+          <!-- 12. Brownie recheado -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="sobremesas">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" 
+                   alt="Brownie recheado" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍫</span>
+                <span>Sobremesas diversas</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 16,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Brownie recheado
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  Casquinha craquelada crocante por fora e um recheio cremoso e irresistível por dentro.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 16,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Brownie%20recheado%20(R$%2016,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Pudim -->
+          <div class="product-item charlotte-card rounded-[2rem] overflow-hidden flex flex-col group transition-all duration-300" data-category="sobremesas">
+            <div class="aspect-[4/3] overflow-hidden bg-[#FDE8EF] relative">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+                   alt="Pudim" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-xs font-bold text-[#C5283D] border border-[#F9CAD8] shadow-sm flex items-center gap-1.5">
+                <span>🍮</span>
+                <span>Sobremesas diversas</span>
+              </div>
+              <div class="absolute bottom-3 right-3 price-badge-floral text-sm">
+                R$ 20,00
+              </div>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-[#2E1B26] mb-2 group-hover:text-[#C5283D] transition-colors">
+                  Pudim
+                </h3>
+                <p class="text-sm text-[#786370] leading-relaxed">
+                  O mais tradicional e aveludado pudim de leite condensado com calda brilhante de caramelo puro.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[#F6D3DE] flex items-center justify-between">
+                <span class="text-lg font-bold text-[#C5283D]">R$ 20,00</span>
+                <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Pudim%20(R$%2020,00)." 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-charlotte-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span>Pedir</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLOCO INFORMATIVO DE PEDIDOS E QUERO DELIVERY -->
+    <section class="py-14 md:py-18 bg-white border-t border-[#F6D3DE] relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="w-16 h-16 rounded-full bg-[#FDE8EF] border-2 border-[#F9CAD8] flex items-center justify-center text-3xl mx-auto mb-5 shadow-sm">
+          🌹
+        </div>
+
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#2E1B26] mb-4">
+          Como fazer o seu pedido?
+        </h2>
+        <p class="text-base sm:text-lg text-[#786370] leading-relaxed mb-8 max-w-2xl mx-auto">
+          Nossas delícias são preparadas com carinho diariamente para o horário da tarde (das 14h às 19h). Você pode pedir pelo WhatsApp ou direto no Quero Delivery!
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <!-- Botão WhatsApp -->
+          <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20doces%20dispon%C3%ADveis%20hoje." 
+             target="_blank" rel="noopener noreferrer"
+             class="btn-whatsapp-chic w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+            </svg>
+            <span>Pedir no WhatsApp</span>
+          </a>
+
+          <!-- Botão Quero Delivery -->
+          <a href="https://app.querodelivery.com/" 
+             target="_blank" rel="noopener noreferrer"
+             class="btn-delivery-chic w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+            <span>🛵</span>
+            <span>Pedir no Quero Delivery</span>
+          </a>
+        </div>
+
+        <p class="text-xs text-[#BA5D77] mt-4 font-semibold">
+          ✨ Atendimento de Segunda a Sábado, das 14h às 19h no Centro
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="bg-white border-t border-[#F6D3DE] pt-14 pb-10 text-[#786370]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: Marca & Afeto Floral -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🌹</span>
+            <span class="font-serif text-2xl font-bold text-[#2E1B26]">Charlotte <span class="italic text-[#C5283D] font-normal">Doceria</span></span>
+          </div>
+          <p class="text-sm leading-relaxed text-[#786370]">
+            Um cantinho com aroma de café, rosas no coração e doces inesquecíveis para transformar o seu dia.
+          </p>
+          <div class="store-status-badge"></div>
+        </div>
+
+        <!-- Col 2: Navegação -->
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Navegação</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-[#C5283D] transition-colors">Início</a></li>
+            <li><a href="produtos.html" class="text-[#C5283D] font-bold">Doces Artesanais</a></li>
+            <li><a href="sobre.html" class="hover:text-[#C5283D] transition-colors">Nossa História</a></li>
+            <li><a href="contato.html" class="hover:text-[#C5283D] transition-colors">Contato & Localização</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categorias de Doces -->
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Categorias</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍯 Delícias no pote</a></li>
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍰 Fatias de bolo</a></li>
+            <li><a href="produtos.html" class="hover:text-[#C5283D] transition-colors">🍮 Sobremesas diversas</a></li>
+            <li><a href="https://app.querodelivery.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#C5283D] font-medium transition-colors">🛵 Quero Delivery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Informações Rápidas -->
+        <div>
+          <h4 class="font-serif text-base font-bold text-[#2E1B26] mb-4">Venha nos visitar</h4>
+          <p class="text-sm text-[#2E1B26] font-medium mb-1">Av. Rui Barbosa, 27 - térreo</p>
+          <p class="text-xs text-[#786370] mb-3">Centro (Em frente à Onofre - Materiais de construção)</p>
+          
+          <p class="text-sm text-[#2E1B26] font-medium mb-1">Segunda a Sábado</p>
+          <p class="text-xs text-[#C5283D] font-bold mb-4">14h às 19h</p>
+
+          <div class="flex items-center gap-3">
+            <a href="https://www.instagram.com/charlottedoceria_/" target="_blank" rel="noopener noreferrer" 
+               class="text-xs font-bold text-[#D84A75] hover:text-[#C5283D] flex items-center gap-1">
+              <span>@charlottedoceria_</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#F6D3DE] flex flex-col sm:flex-row items-center justify-between text-xs text-[#9E8896] gap-3">
+        <p>© 2026 Charlotte Doceria. Todos os direitos reservados. Confeitaria artesanal & Afeto.</p>
+        <p class="flex items-center gap-1">Feito com 🌹 e doçura por duas irmãs apaixonadas por doces.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <div class="floating-whatsapp-container">
+    <div class="floating-tooltip">
+      <span>🌹</span>
+      <span>Deseja um doce hoje? Fale conosco!</span>
+    </div>
+    <a href="https://wa.me/5583993804545?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Charlotte%20Doceria." 
+       target="_blank" rel="noopener noreferrer"
+       class="w-14 h-14 rounded-full btn-whatsapp-chic flex items-center justify-center text-white shadow-2xl focus:outline-none hover:scale-110 transition-transform"
+       aria-label="Falar no WhatsApp">
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.871.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766-.001-3.181-2.588-5.766-5.77-5.766zm9.969 5.767c0 5.514-4.486 10-10 10-1.745 0-3.385-.45-4.821-1.24l-5.179 1.359 1.385-5.056c-.902-1.499-1.385-3.217-1.385-5.063 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

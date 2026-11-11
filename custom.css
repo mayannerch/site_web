@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap');
+
+:root {
+  /* Paleta Charlotte Doceria: Rosa, Branco e Confeitaria */
+  --color-brand-primary: #C5283D;        /* Rosa-vinho principal da marca */
+  --color-brand-hover: #A41623;          /* Hover escuro */
+  --color-brand-crimson: #B81D3E;        /* Rosa carmim */
+  --color-brand-pink: #D84A75;           /* Rosa vibrante */
+  --color-brand-pink-hover: #BF335F;
+  --color-brand-dusty: #BA5D77;          /* Rosa queimado sofisticado */
+  --color-brand-baby: #FDE8EF;           /* Rosa-bebê delicado */
+  --color-brand-soft: #F9CAD8;           /* Rosa suave */
+  --color-brand-petal: #FFF0F5;          /* Rosa pastel */
+  --color-brand-canvas: #FFF8FA;         /* Fundo creme rosado */
+  --color-surface-white: #FFFFFF;
+  --color-brand-border: #F6D3DE;
+  --color-brand-border-subtle: #FDF0F4;
+  --color-gold-accent: #C59A45;          /* Dourado artesanal */
+  
+  /* aliases para compatibilidade */
+  --color-rose-red: #C5283D;
+  --color-rose-red-hover: #A41623;
+  --color-rose-crimson: #B81D3E;
+  --color-rose-primary: #D84A75;
+  --color-rose-primary-hover: #BF335F;
+  --color-rose-dusty: #BA5D77;
+  --color-rose-baby: #FDE8EF;
+  --color-rose-soft: #F9CAD8;
+  --color-rose-petal: #FFF0F5;
+  --color-rose-canvas: #FFF8FA;
+  --color-rose-border: #F6D3DE;
+  --color-rose-border-subtle: #FDF0F4;
+
+  /* Cores de Texto */
+  --color-text-cocoa: #2E1B26;
+  --color-text-muted: #786370;
+  --color-text-light: #9E8896;
+  
+  /* Botões e Serviços */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #20BA5A;
+  --color-delivery: #E63946;
+  --color-delivery-hover: #C5283D;
+  
+  /* Tipografia */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: 'Caveat', cursive, sans-serif;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-rose-canvas);
+  color: var(--color-text-cocoa);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Seleção de Texto Estilizada */
+::selection {
+  background-color: #F9CAD8;
+  color: #9E1B2C;
+}
+
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF0F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #F4BAC9;
+  border-radius: 9999px;
+  border: 2px solid #FFF0F5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-rose-red);
+}
+
+/* Tipografia */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* =========================================
+   ELEMENTOS DECORATIVOS — CONFEITARIA
+   ========================================= */
+
+/* Marca d'água sutil de fundo */
+.confeit-watermark {
+  position: relative;
+}
+.confeit-watermark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 10% 20%, rgba(197, 40, 61, 0.03) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(216, 74, 117, 0.04) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Divisor de seções delicado */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #F4BAC9, transparent);
+}
+
+/* Borda suave de card */
+.brand-border {
+  border: 1.5px solid var(--color-brand-border);
+  box-shadow: 0 4px 20px -2px rgba(197, 40, 61, 0.05);
+}
+
+/* Aliases para compatibilidade com classes existentes nos HTMLs */
+.floral-watermark { position: relative; }
+.floral-divider { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
+.floral-border { border: 1.5px solid var(--color-brand-border); }
+
+/* =========================================
+   BOTÕES E COMPONENTES DE AÇÃO
+   ========================================= */
+
+/* Botão Chic WhatsApp */
+.btn-whatsapp-chic {
+  background: linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-whatsapp-chic:hover {
+  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 26px -4px rgba(37, 211, 102, 0.55);
+}
+
+/* Botão Quero Delivery Floral */
+.btn-delivery-chic {
+  background: linear-gradient(135deg, #E63946 0%, #C5283D 50%, #9E1B2C 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px -4px rgba(197, 40, 61, 0.4);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+.btn-delivery-chic:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 26px -4px rgba(197, 40, 61, 0.55);
+}
+
+/* Botão Primário Charlotte Floral (Rosa Vermelha + Rosa) */
+.btn-charlotte-primary {
+  background: linear-gradient(135deg, #C5283D 0%, #D84A75 60%, #E85B88 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px -4px rgba(197, 40, 61, 0.35);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+.btn-charlotte-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  transition: left 0.75s ease;
+}
+.btn-charlotte-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 28px -4px rgba(197, 40, 61, 0.45);
+}
+.btn-charlotte-primary:hover::after {
+  left: 100%;
+}
+
+.btn-charlotte-secondary {
+  background: #FFFFFF;
+  color: var(--color-rose-red);
+  border: 1.5px solid var(--color-rose-soft);
+  box-shadow: 0 4px 14px rgba(197, 40, 61, 0.08);
+  transition: all 0.25s ease;
+}
+.btn-charlotte-secondary:hover {
+  background: var(--color-rose-baby);
+  border-color: #F4BAC9;
+  color: var(--color-rose-red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(197, 40, 61, 0.16);
+}
+
+/* =========================================
+   MENU E NAVEGAÇÃO
+   ========================================= */
+
+.nav-link-charlotte {
+  position: relative;
+  color: var(--color-text-cocoa);
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+.nav-link-charlotte:hover {
+  color: var(--color-rose-red);
+}
+.nav-link-charlotte.active {
+  color: var(--color-rose-red);
+  font-weight: 700;
+}
+.nav-link-charlotte.active::after {
+  content: '🧁';
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+}
+
+/* =========================================
+   CARDS DA DOCERIA & IDENTIDADE FLORAL
+   ========================================= */
+
+.charlotte-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-rose-border);
+  box-shadow: 0 6px 20px -4px rgba(197, 40, 61, 0.06);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+.charlotte-card:hover {
+  transform: translateY(-6px);
+  border-color: #F9CAD8;
+  box-shadow: 0 20px 35px -8px rgba(197, 40, 61, 0.16);
+}
+
+/* Tag de Preço em Destaque Floral */
+.price-badge-floral {
+  background: linear-gradient(135deg, #FFF0F5 0%, #FDE8EF 100%);
+  color: var(--color-rose-red);
+  border: 1.5px solid #F9CAD8;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  box-shadow: 0 2px 8px rgba(197, 40, 61, 0.08);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Abas de Categorias Interativas */
+.category-tab-btn {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.category-tab-btn.active {
+  background: linear-gradient(135deg, #C5283D 0%, #D84A75 100%) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 24px -4px rgba(197, 40, 61, 0.4) !important;
+  transform: scale(1.04);
+}
+
+/* Quadro de Preços Rápido & Decorativo */
+.price-board-box {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9FA 100%);
+  border: 1.5px solid #F6D3DE;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -6px rgba(197, 40, 61, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+.price-board-box::before {
+  content: '🧁';
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 4rem;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* Linha da Tabela de Preços */
+.price-list-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed #F6D3DE;
+  transition: background-color 0.2s ease;
+}
+.price-list-item:last-child {
+  border-bottom: none;
+}
+.price-list-item:hover {
+  background-color: rgba(253, 232, 239, 0.35);
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* =========================================
+   DESTAQUE: "Você é nossa convidada especial!"
+   ========================================= */
+
+.guest-highlight-box {
+  position: relative;
+  background: linear-gradient(135deg, #FFF0F5 0%, #FDE8EF 50%, #FFF5F8 100%);
+  border: 2px dashed #F4BAC9;
+  border-radius: 2rem;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 12px 30px -8px rgba(197, 40, 61, 0.16);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.guest-highlight-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(197, 40, 61, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  animation: rotate-slow 15s linear infinite;
+}
+.guest-highlight-box:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 18px 36px -6px rgba(197, 40, 61, 0.24);
+}
+
+.guest-highlight-phrase {
+  color: var(--color-rose-red);
+  background: linear-gradient(120deg, #C5283D 0%, #D84A75 50%, #B81D3E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 2px 12px rgba(197, 40, 61, 0.12);
+}
+
+/* Animações Decorativas */
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gentle-wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+.hover-wobble:hover {
+  animation: gentle-wobble 0.6s ease-in-out;
+}
+
+@keyframes pulse-heart {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+.animate-pulse-heart {
+  display: inline-block;
+  animation: pulse-heart 2s infinite ease-in-out;
+}
+
+/* Fita / Faixa Animada (Marquee Floral) */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Botão Flutuante do WhatsApp */
+.floating-whatsapp-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.floating-tooltip {
+  background: #FFFFFF;
+  color: var(--color-text-cocoa);
+  border: 1.5px solid var(--color-rose-soft);
+  box-shadow: 0 10px 25px -5px rgba(197, 40, 61, 0.18);
+  padding: 8px 14px;
+  border-radius: 18px 18px 4px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: float-badge 3s ease-in-out infinite;
+  white-space: nowrap;
+}
+@keyframes float-badge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
